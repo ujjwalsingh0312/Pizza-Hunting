@@ -80,8 +80,12 @@
                         </span>
                     </span>
                 </div>
-                <button id="clickme" class="btn btn-outline-success w-100 mt-2">Pay Bill</button>
-                <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+                <!--<button id="clickme" class="btn btn-outline-success w-100 mt-2">Pay Bill</button>-->
+                <form>
+                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                        data-payment_button_id="pl_MLsiT18HT8AQ3v" async> </script>
+                </form>
+                <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
                 <script>
                     var options = {
                         "key": "rzp_test_1IctVx1wdOXMbs", // Enter the Key ID generated from the Dashboard
@@ -104,7 +108,7 @@
                             "color": "#3399cc"
                         }
                     };
-                </script>
+                </script> -->
             </div>
         </div>
     </div>
