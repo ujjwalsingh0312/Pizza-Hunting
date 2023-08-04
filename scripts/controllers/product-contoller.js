@@ -71,27 +71,16 @@ function printCart(pizza) {
     const cart = document.querySelector('#basket');
     cart.innerHTML = '';
     cartProducts.forEach(el => {
-        //const pizcard = document.createElement('div');
-        //pizcard.className = 'card';
         const pizrow = document.createElement('div');
         pizrow.className = 'row';
-        // const headline1 = document.createElement('div');
-        // headline1.className = 'col-9 text-left';
-        // headline1.innerText = 'Pizza Name';
-        // const headline2 = document.createElement('div');
-        // headline2.className = 'col-3 text-center';
-        // headline2.innerText = 'Price';
         const pizname = document.createElement('li');
         pizname.className = 'col-9 text-left';
         pizname.innerText = el.name;
         const pizprice = document.createElement('div');
         pizprice.className = 'col-3 text-right'
         pizprice.innerText = `$ ${el.price}`;
-        //pizrow.appendChild(headline1);
-        //pizrow.appendChild(headline2);
         pizrow.appendChild(pizname);
         pizrow.appendChild(pizprice);
-        //pizcard.appendChild(pizrow);
         cart.appendChild(pizrow);
         // const li = document.createElement('li');
         // li.className = 'card';
