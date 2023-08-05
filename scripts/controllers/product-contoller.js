@@ -91,7 +91,7 @@ function printCart(pizza) {
             const pizprice = document.createElement('div');
             pizprice.className = 'col-3 text-right'
             pizprice.innerText = `$ ${el.price}`;
-            pizrow.appendchild(pizquant);
+            pizrow.appendChild(pizquant);
             pizrow.appendChild(pizname);
             pizrow.appendChild(pizprice);
             cart.appendChild(pizrow);
