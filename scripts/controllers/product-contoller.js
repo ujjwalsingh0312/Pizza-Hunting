@@ -83,10 +83,10 @@ function printCart(pizza) {
             const pizrow = document.createElement('div');
             pizrow.className = 'row';
             const pizname = document.createElement('li');
-            pizname.className = 'col-7 text-center';
+            pizname.className = 'col-7 text-left';
             pizname.innerText = el.name;
             const pizquant = document.createElement('div');
-            pizquant.className = 'col-2 text-left';
+            pizquant.className = 'col-2 text-center';
             pizquant.innerText = '1';
             const pizprice = document.createElement('div');
             pizprice.className = 'col-3 text-right'
