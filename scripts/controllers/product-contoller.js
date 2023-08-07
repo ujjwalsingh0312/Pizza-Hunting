@@ -82,17 +82,17 @@ function printCart(pizza) {
         cartProducts.forEach(el => {
             const pizrow = document.createElement('div');
             pizrow.className = 'row';
-            const pizquant = document.createElement('li');
-            pizquant.className = 'col-2 text-left';
-            pizquant.innerText = '1';
-            const pizname = document.createElement('div');
+            const pizname = document.createElement('li');
             pizname.className = 'col-7 text-center';
             pizname.innerText = el.name;
+            const pizquant = document.createElement('div');
+            pizquant.className = 'col-2 text-left';
+            pizquant.innerText = '1';
             const pizprice = document.createElement('div');
             pizprice.className = 'col-3 text-right'
             pizprice.innerText = `$ ${el.price}`;
-            pizrow.appendChild(pizquant);
             pizrow.appendChild(pizname);
+            pizrow.appendChild(pizquant);
             pizrow.appendChild(pizprice);
             cart.appendChild(pizrow);
             // const li = document.createElement('li');
